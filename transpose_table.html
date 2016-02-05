@@ -7,31 +7,186 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="transpose_table.js"></script>
+    
+        <style>
+            .headers{
+                text-decoration: underline;
+            }
+            .data{
+                font-style: italic;
+            }
+            .loan_name{
+                text-decoration: overline;
+            }
+        </style>
     </head>
-    <p>
-        <table class='table flip_table'>
-            <tr>
-                <th>
-                    1
-                </td>
-                <td>
-                    2
-                </td>
-                <td>
-                    3
-                </td>
-            </tr>
-            <tr>
-                <th>
-                    4
-                </td>
-                <td>
-                    5
-                </td>
-                <td>
-                    6
-                </td>
-            </tr>
-        </table>
-    </p>
+    
+    <div class='container'>
+        <p>
+            <h3 class='text-center'>Use your brower's inspect element or manually shrink the screen size to see the transposed table.</h3>
+        </p>
+        
+        <p>
+            <div class='text-center'><h3>Simple table with thead</h3></p>
+            <div name='table_wrapper'>
+                <table class='table transpose' id='my_table'>
+                    <thead id='my_thead'>
+                        <tr class='headers' id='the_header_row'>
+                            <th id='loan_header'>
+                                Loan
+                            </th>
+                            <th >
+                                Interest Rate
+                            </th>
+                            <th >
+                                Origination Date
+                            </th>
+                            <th >
+                                Monthly Payment
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id='my_tbody'>
+                        <tr >
+                            <th>
+                                Loan 1
+                            </td>
+                            <td>
+                                2%
+                            </td>
+                            <td>
+                                3/1/2015
+                            </td>
+                            <td>
+                                $40
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                Loan 2
+                            </td>
+                            <td>
+                                6%
+                            </td>
+                            <td>
+                                7/1/2016
+                            </td>
+                            <td>
+                                $80
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
+        
+        <p>&nbsp</p>
+        
+        <p>
+            <div class='text-center'><h3>Complex table with thead</h3></p>
+            <div name='table_wrapper'>
+                <table class='table transpose' id='my_table'>
+                    <thead id='my_thead'>
+                        <tr class='headers' id='the_header_row'>
+                            <th style='color: greenyellow' id='loan_header'>
+                                Loan
+                            </th>
+                            <th style='color: red'>
+                                Interest Rate
+                            </th>
+                            <th style='color: blue'>
+                                Origination Date
+                            </th>
+                            <th style='color: forestgreen'>
+                                Monthly Payment
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id='my_tbody'>
+                        <tr class='data' id='data_row1'>
+                            <th style='color: orange' class='loan_name'>
+                                Loan 1
+                            </td>
+                            <td style='color: pink' id='2_percent'>
+                                2%
+                            </td>
+                            <td style='color: aqua'>
+                                3/1/2015
+                            </td>
+                            <td style='color: blueviolet'>
+                                $40
+                            </td>
+                        </tr>
+                        <tr class='data'>
+                            <th style='color: brown' class='loan_name'>
+                                Loan 2
+                            </td>
+                            <td style='color: gold'>
+                                6%
+                            </td>
+                            <td style='color: magenta'>
+                                7/1/2016
+                            </td>
+                            <td style='color: tan'>
+                                $80
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </p>
+        
+        <p>&nbsp</p>
+        
+        <p>
+            <div class='text-center'><h3>Complex table without thead</h3></div>
+            <div name='table_wrapper'>
+                <table class='table transpose' id='my_table2'>
+                    <tr class='headers' id='the_header_row'>
+                        <th style='color: greenyellow' id='loan_header'>
+                            Loan
+                        </th>
+                        <th style='color: red'>
+                            Interest Rate
+                        </th>
+                        <th style='color: blue'>
+                            Origination Date
+                        </th>
+                        <th style='color: forestgreen'>
+                            Monthly Payment
+                        </th>
+                    </tr>
+                    <tr class='data' id='data_row2'>
+                        <th style='color: orange' class='loan_name'>
+                            Loan 1
+                        </td>
+                        <td style='color: pink' id='2_percent2'>
+                            2%
+                        </td>
+                        <td style='color: aqua'>
+                            3/1/2015
+                        </td>
+                        <td style='color: blueviolet'>
+                            $40
+                        </td>
+                    </tr>
+                    <tr class='data'>
+                        <th style='color: brown' class='loan_name'>
+                            Loan 2
+                        </td>
+                        <td style='color: gold'>
+                            6%
+                        </td>
+                        <td style='color: magenta'>
+                            7/1/2016
+                        </td>
+                        <td style='color: tan'>
+                            $80
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </p>
+    </div>
+
 </html>
