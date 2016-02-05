@@ -8,6 +8,8 @@ transpose_table.js is a Bootstrap add-on that creates a responsive, transposed v
 Try the [Demo](https://rawgit.com/kmclaugh/Transpose_Table/master/transpose_table.html)
 ------------------------------------------------------------------------
 
+See a live example [here](http://www.countingcalculi.com/features/uber_v_taxis/)
+
 For example a table on small to large screens like this
 
 <div ><table class="table transpose" id="my_table"><thead id="my_thead"><tr class="headers" id="the_header_row"><th id="loan_header">
